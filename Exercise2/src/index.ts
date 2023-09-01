@@ -47,3 +47,31 @@ function getStringOrColor(value: string | Colors): string {
         return Colors[value];
     }
 }
+
+class ModifiedCar {
+    private _brand: string;
+    private _model: string;
+    public year: number;
+
+    constructor(brand: string, model: string, year: number) {
+        this._brand = brand;
+        this._model = model;
+        this.year = year;
+    }
+
+    get brand(): string {
+        return this._brand;
+    }
+
+    set brand(value: string) {
+        this._brand = value;
+    }
+
+    get model(): string {
+        return this._model;
+    }
+
+    set model(value: string) {
+        this._model = value;
+    }
+}
